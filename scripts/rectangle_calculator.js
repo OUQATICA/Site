@@ -2,9 +2,9 @@ document.getElementById('rectangleForm').addEventListener('submit', displaySurfa
 
 function displaySurfaceAndVolume(event) {
     event.preventDefault();
-    let a = parseFloat(document.getElementById('a').value);
-    let b = parseFloat(document.getElementById('b').value);
-    let c = parseFloat(document.getElementById('c').value);
+    let a = document.getElementById('a').value;
+    let b = document.getElementById('b').value;
+    let c = document.getElementById('c').value;
     let s = 2*(a*b + b*c + a*c);
     let v = a*b*c; 
     let sFormula = `Площадь = 2*(a*b + b*c + a*c) = 2*(${a}*${b} + ${b}*${c} + ${a}*${c}) = ${s}`;
