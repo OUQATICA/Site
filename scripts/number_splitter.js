@@ -1,5 +1,14 @@
-let number, dozens, ones;
-number = parseInt(prompt('Введите число')); //вводим число с клавиатуры
-dozens = parseInt(number/10);
-ones = number % 10;
-alert('десятки: ' + dozens + '\nединицы: ' + ones)
+document.getElementById('numberForm').addEventListener('submit', displayDozensAndOnes);
+
+
+function displayDozensAndOnes(event) {
+    event.preventDefault();
+
+    let number = document.getElementById('number').value
+    let dozens = `Десятки: ${parseInt((number/10)%10)}`
+    let ones = `Единицы: ${number % 10}`
+    document.getElementById('resultNumberSplitter').innerHTML = `
+        <p class="text">${dozens}</p>
+        <p class="text">${ones}</p>
+    `;
+}

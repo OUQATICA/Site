@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vydrych_pie_32_LR-2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="text">Лабораторная работа 2.</h1>
+    </header>
+    <div class="content">
+        <div class="card">
+            <h2 class="text">Вычисление площади параллелограмма</h2>
+                <form id="rectangleForm">
+                    <p class="text">Сторона a:</p>
+                    <input type="number" id="a" min="0" step="any" required>
+                    <p class="text">Сторона b:</p>
+                    <input type="number" id="b" min="0" step="any" required>
+                    <p class="text">Сторона c:</p>
+                    <input type="number" id="c" min="0" step="any" required>
+                    <button class="text" type="submit">Вычислить</button>
+                </form>
+            <div id="resultRectangleCalculator"></div>
+        </div>
+        <div class="card">
+            <h2 class="text">Вычисление десятков и единиц числа</h2>
+                <form id="numberForm">
+                    <p class="text">Число:</p>
+                    <input type="number" id="number" step="1" required>
+                    <button class="text" type="submit">Вычислить</button>
+                </form>
+            <div id="resultNumberSplitter"></div>
+        </div>
+    </div>
+    
+    <footer>
+        <a class="footer-a text" href="">Репозиторий лабораторной работы на Github</a>
+        <a class="footer-a text" href="">Отчет о выполнении лабораторной работы</a>
+        <a class="footer-a text" href="../index.html">На главную</a>
+    </footer>
+    <script src="../scripts/rectangle_calculator.js"></script>
+    <script src="../scripts/number_splitter.js"></script>
+</body>
+</html>
