@@ -1,4 +1,6 @@
-document.getElementById('resultCheckInequality').addEventListener('submit', checkInequality);
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('ineqalityForm').addEventListener('submit', checkInequality);
+});
 
 
 function checkInequality(event) {
