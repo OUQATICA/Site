@@ -8,7 +8,7 @@ function calcValue(event) {
     let b = 4.2;
     let result, func;
     if (x <= 3){
-        result = roundValue(b - x**2 - 1);
+        result = b - x**2 - 1;
         func = `${b} - x² - 1`;
     } else if (x >= 8) {
         result = Math.sqrt(Math.log(x) + a);
@@ -22,7 +22,8 @@ function calcValue(event) {
         `;
 
 }
-function roundValue(number) {  //округляет число до 1 знака после запятой по мат. правилам
+
+function roundValue(number) {  //округляет число до 2 знаков после запятой по мат. правилам
     if (number > 0) {
         return Math.round(number * 100) / 100;
     } else {

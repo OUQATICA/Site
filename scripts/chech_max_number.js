@@ -7,11 +7,11 @@ function checkMaxNumber(event) {
     let b = parseFloat(document.getElementById('secondNum').value);
     if (a > b){
         document.getElementById('resulMaxtNumber').innerHTML = `
-            <p class="text">A > B: TRUE</p>
+            <p>${a}</p>
         `;
     } else {
         document.getElementById('resulMaxtNumber').innerHTML = `
-            <p class="text">A > B: FALSE</p>
+            <p>${b}</p>
         `;
     }
 }

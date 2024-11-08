@@ -9,7 +9,7 @@ function calcValue(event) {
     let result, func;
     switch (y) {
         case 3:
-            result = b - y**2 - 1;
+            result = roundValue(b - y**2 - 1);
             func = `${b} - x² - 1 = `;
             break;
         case 8:
