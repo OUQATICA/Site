@@ -24,7 +24,7 @@ function calcValue(event) {
 }
 function roundValue(number) {  //округляет число до 1 знака после запятой по мат. правилам
     if (number > 0) {
-        return Math.round(number * 10) / 10;
+        return Math.round(number * 100) / 100;
     } else {
         return -Math.abs(Math.round(number * 10) / 10);
     }

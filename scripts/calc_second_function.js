@@ -18,7 +18,7 @@ function calcValue(event) {
             break;
         case 7:
             result = Math.cos((a*y**2) + 3)**2;
-            func = ` =cos(${a} ∙ x²) + 3 = `;
+            func = `cos(${a} ∙ x²) + 3 = `;
             break;
         default:
             result = 'Ошибка: значение x не поддерживается';
