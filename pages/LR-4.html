@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vydrych_pie_32_LR-2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header class="card">
+        <h1>Лабораторная работа 4.</h1>
+    </header>
+    <div class="content">
+        <div class="card">
+            <h2 class="text">Округление набора целых чисел.</h2>
+                <form id="RoundNumbersForm">
+                    <p>Число N:</p>
+                    <input class="card__input" type="number" id="count" step="any" min="1" required>
+                    <button class="card__button card__button_text" id="countInput" type="submit">Ввод</button>
+                    <div id="inputNumber"></div>
+                </form>
+            <div id="resultRoundNumbersForm"></div>
+            <div id="sumRoundNumbersForm"></div>
+        </div>
+
+        <div class="card">
+            <h2 class="text">Вычисление десятков и единиц числа</h2>
+                <form id="candyCostForm">
+                    <p>Цена 1 кг конфет:</p>
+                    <input class="card__input" type="number" min="0" id="candyCost" step="any" required>
+                    <button class="card__button card__button_text" type="submit">Вычислить</button>
+                </form>
+            <div id="resultCandyCost"></div>
+        </div>
+    </div>
+    
+    <footer class="card">
+        <a class="footer__text" href="../documents/vydrych_pie_32_lr-4.pdf" target="_blank">Отчет о выполнении лабораторной работы</a>
+        <a class="footer__text" href="../index.html">На главную</a>
+    </footer>
+    <script src="../scripts/roundNumbers.js"></script>
+    <script src="../scripts/candy_costs.js"></script>
+</body>
+</html>
