@@ -131,6 +131,6 @@ function openChest(event) {
         <p class="game__text">Найденными сокровищами вы обсепечили себе безбедную жизнь и путевки на мальдивы раз в два года.</p>
         <button class="game__button" id="startOver">Начать сначала</button>
     `;
-    document.getElementById('gameBackground').style.backgroundImage = "url('../pictures/castle.jpg')";
+    document.getElementById('gameBackground').style.backgroundImage = "url('../pictures/opened_chest.jpg')";
     document.getElementById('startOver').addEventListener('click', startOver);
 };
