@@ -57,3 +57,66 @@ body {
     text-align: center;
     gap: 2vh;
 }
+
+.game {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.backgroundPiture {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: url('../pictures/castle.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+@media (min-width: 768px) {
+    .backgroundPiture {
+        position: relative;
+        width: 70%;
+        height: 80vh;
+        background-image: url('../pictures/castle.jpg');
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    text-align: center;
+}
+
+.game__text {
+    font-size: 24px;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+.game__button {
+    background-color: #1d1d1d; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
