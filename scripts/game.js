@@ -1,4 +1,3 @@
-
 let playerData = {
     playerHasNote: false,
     playerHasKey: false
