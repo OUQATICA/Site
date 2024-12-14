@@ -120,3 +120,12 @@ body {
     cursor: pointer;
     font-size: 18px;
 }
+
+.card__table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+

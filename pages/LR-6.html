@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vydrych_pie_32_LR-2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header class="card">
+        <h1>Лабораторная работа 6.</h1>
+    </header>
+    <div class="content">
+        <div class="card">
+            <h2 class="text">Генерация матрицы</h2>
+                <form id="matrixGenForm">
+                    <p>Введите размеры матрицы:</p>
+                    <input class="card__input" type="number" min="1" id="N" step="1" required>
+                    <input class="card__input" type="number" min="1" id="M" step="1" required>
+                    <p>Введите число D:</p>
+                    <input class="card__input" type="number" id="D" step="any" required>
+                    <p class="card__text">Введите набор из N чисел:</p>
+                    <input class="card__input" type="number" id="number" name="number" step="any" required>
+                    <button class="card__button card__button_text" id="submitNArray" type="click">Ввод</button>
+                    <button class="card__button card__button_text" id="submitMatrixGen" type="click">Генерация</button>
+                </form>
+            <div class="card__table">
+                <div id="matrixGenResult"></div>
+            </div>
+        </div>
+        <div class="card">
+            <h2 class="text">Замена правой и левой частей матрицы</h2>
+            <form id="swapMatrixForm">
+                <p>Введите размеры матрицы:</p>
+                <input class="card__input" type="number" min="2" id="A" step="2" required>
+                <input class="card__input" type="number" min="1" id="B" step="1" required>
+                <button class="card__button card__button_text" id="submitSwapMatrix" type="submit">Замена</button>
+                <p>Исходная матрица:</p>
+                <div class="card__table">
+                    <div id="matrix"></div>
+                </div>
+            </form>
+            <p>Матрица после замены:</p>
+            <div class="card__table">
+                <div id="swapMatrixResult"></div>
+            </div>
+        </div>
+    </div>
+    <footer class="card">
+        <a class="footer__text" href="../documents/vydrych_pie_32_lr-5.pdf" target="_blank">Отчет о выполнении лабораторной работы</a>
+        <a class="footer__text" href="../index.html">На главную</a>
+    </footer>
+    <script type="module" src="../scripts/matrixGen.js"></script>
+    <script type="module" src="../scripts/swapMatrix.js"></script>
+</body>
+</html>
+
