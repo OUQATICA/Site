@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vydrych_pie_32_LR-2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header class="card">
+        <h1>Лабораторная работа 7.</h1>
+    </header>
+    <div class="content">
+        <div class="card">
+            <h2>Поиск продуктов</h2>
+            <input class="card__input" style="width: 200px;" type="text" id="searchInput" placeholder="Введите название продукта">
+            <button class="card__button" id="searchButton">Найти</button>
+        </div>
+        <div class="card_container" id="found_products"></div>
+        <div class="card_container" id="all_products"></div>
+        
+    </div>
+    <footer class="card">
+        <a class="footer__text" href="../documents/vydrych_pie_32_lr-5.pdf" target="_blank">Отчет о выполнении лабораторной работы</a>
+        <a class="footer__text" href="../index.html">На главную</a>
+    </footer>
+    <script type="module" src="../scripts/view_products.js"></script>
+    <script type="module" src="../scripts/search_products.js"></script>
+</body>
+</html>
+
